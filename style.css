@@ -2,6 +2,8 @@
   --default-text-color: lightgrey;/*#AFD2E9;*/
   --default-seperator-color: darkgrey;
   --default-content-width: 45em;
+  --link-float: right;
+  --header-display: inline-block;
 }
 
 body {
@@ -43,7 +45,7 @@ body {
     font-size: 3em;
     color: inherit;
     text-transform: uppercase;
-    display: inline-block;
+    display: var(--header-display);
     text-align: bottom;
   	line-height: 0;
 	  padding-bottom: 1em;
@@ -58,12 +60,12 @@ body {
 
 .header-links
 {
-    display: inline-block;
+    display: var(--header-display);
     margin-top: 0em;
     vertical-align: bottom;
     padding-left: 4em;
     text-align: right;
-    float: right;
+    float: var(--link-float);
 }
 
 .header-link
@@ -76,7 +78,7 @@ body {
   margin-right:0.5em;
 	line-height: 0;
   text-align: right;
-	border-bottom: 3px solid transparent;
+	display: var(--header-display);
   font-family: 'LinksFont';
 }
 
