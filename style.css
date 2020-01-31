@@ -1,0 +1,130 @@
+:root {
+  --default-text-color: lightgrey;/*#AFD2E9;*/
+  --default-seperator-color: darkgrey;
+  --default-content-width: 45em;
+}
+
+body {
+  background-color:rgb(51, 54, 56);
+}
+
+@font-face
+{
+    font-family: 'LinksFont';
+    src: url('OpenSans-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+  font-family: 'NameFont';
+  src: url('BebasNeue-Regular.ttf');
+}
+
+
+.header
+{
+    width: var(--default-content-width);
+	  max-height: 2em;
+	  padding-left: 0em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    padding-top: 0em;
+    vertical-align: middle;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: var(--default-seperator-color);
+    color: var(--default-text-color);
+}
+
+
+.header-title
+{
+    font-size: 3em;
+    color: inherit;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: bottom;
+  	line-height: 0;
+	  padding-bottom: 1em;
+}
+
+.header-title a
+{
+    color:inherit;
+    text-decoration: none;
+    font-family: 'NameFont';   
+}
+
+.header-links
+{
+    display: inline-block;
+    margin-top: 0em;
+    vertical-align: bottom;
+    padding-left: 4em;
+    text-align: right;
+    float: right;
+}
+
+.header-link
+{
+	vertical-align: middle;
+  font-size: 1.2em;
+  color: var(--highlight-color);
+  text-decoration: none;
+  margin-left:0.5em;
+  margin-right:0.5em;
+	line-height: 0;
+  text-align: right;
+	border-bottom: 3px solid transparent;
+  font-family: 'LinksFont';
+}
+
+.content a{
+  text-decoration: none;
+  margin-top:0;
+}
+
+.content-heading {
+  font-size: 2.4em;
+  color: darkgray;
+  font-family: 'NameFont';
+}
+
+.content-text-body {
+  font-size: 1.5em;
+}
+
+.project {
+  text-align:center;
+}
+
+.project-image {
+  background-size: auto 200%;
+  background-repeat: no-repeat;
+  height: 25em;
+  width: var(--default-content-width);
+}
+
+.project-name {
+  margin-top: auto;
+  margin-bottom: auto;
+  color: var(--project-text-color);
+  top:50%;
+  bottom:50%;
+}
+
+.footer {
+    width: var(--default-content-width);
+	  max-height: 2em;
+	  padding-left: 0em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    padding-top: 0.5em;
+    vertical-align: middle;
+    border-top-style: solid;
+    border-top-width: 2px;
+    border-top-color: var(--default-seperator-color);
+    color: var(--default-text-color);
+}
