@@ -8,7 +8,6 @@ function onWindowResize() {
     root.style.setProperty('--link-float', "right");
     root.style.setProperty('--header-display', "inline-block");
   }
-  //else a computer
   else {
     root.style.setProperty('--default-content-width', "45em");
     root.style.setProperty('--link-float', "right");
@@ -19,10 +18,29 @@ function onWindowResize() {
 
 //check if mobile device
 if (/Mobi/.test(navigator.userAgent)) {
-    console.log("phone");
+  console.log("phone");
+  var path = window.location.pathname;
+  var page = path.split("/").pop();
+  if(page[0]!=="m") {
+    //if page is blank then on index.html
+    //otherwise is a different webpage
+    if(page!=="") {
+      window.location.replace("m"+page);
+    }
+    else{
+      window.location.replace("mindex.html");
+    }
+  }
 }
 else {
   console.log("pc");
+  var path = window.location.pathname;
+  var page1 = path.split("/").pop();
+  //if on a mobile page redirect to the pc one
+  if(page1[0]==="m") {
+    var page2 = page1.substr(1);
+    window.location.replace(page2);
+  }
 }
 
 window.addEventListener('resize', onWindowResize);
