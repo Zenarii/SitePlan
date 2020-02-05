@@ -13,12 +13,10 @@ function onWindowResize() {
     root.style.setProperty('--link-float', "right");
     root.style.setProperty('--header-display', "inline-block");
   }
-  console.log("Width:", w,"Height:", h);
 }
 
 //check if mobile device
 if (/Mobi/.test(navigator.userAgent)) {
-  console.log("phone");
   var path = window.location.pathname;
   var page = path.split("/").pop();
   if(page[0]!=="m") {
@@ -33,7 +31,6 @@ if (/Mobi/.test(navigator.userAgent)) {
   }
 }
 else {
-  console.log("pc");
   var path = window.location.pathname;
   var page1 = path.split("/").pop();
   //if on a mobile page redirect to the pc one
