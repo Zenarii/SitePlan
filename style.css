@@ -123,7 +123,6 @@ body {
 .HTMLButton:hover {
     background-color: var(--colour-dark);
     text-decoration: none;
-    width: 100px;
     margin: auto;
 }
 
