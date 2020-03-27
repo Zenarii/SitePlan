@@ -1,131 +1,154 @@
 :root {
-  --default-text-color: lightgrey;/*#AFD2E9;*/
-  --default-seperator-color: darkgrey;
-  --default-content-width: 45em;
-  --link-float: right;
-  --header-display: inline-block;
+    --colour-clear: #DDFDDC;
+    --colour-light: #53AF51;
+    --colour-dark: #2F992C;
+    /*--colour-darker: #2F992C;*/
+    --colour-background: rgb(245, 250, 245);
 }
 
 body {
-  background-color:rgb(51, 54, 56);
+  background-color: var(--colour-background);
+  width: 70%;
+  margin: auto;
+  text-decoration: none;
 }
 
-@font-face
-{
-    font-family: 'LinksFont';
-    src: url('OpenSans-Regular.ttf') format('truetype');
+.Seperator {
+    padding:8px;
 }
 
-@font-face
-{
-  font-family: 'NameFont';
-  src: url('BebasNeue-Regular.ttf');
+.TitleWrapper {
+    text-align: center;
 }
 
+.ZenariiTitle {
+    display: inline-block;
+    width: 300px;
+    font-size: 3rem;
 
-.header
-{
-    width: var(--default-content-width);
-	  max-height: 2em;
-	  padding-left: 0em;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2em;
-    padding-top: 0em;
-    vertical-align: middle;
-    border-bottom-style: solid;
-    border-bottom-width: 2px;
-    border-bottom-color: var(--default-seperator-color);
-    color: var(--default-text-color);
 }
 
-
-.header-title
-{
-    font-size: 3em;
-    color: inherit;
-    text-transform: uppercase;
-    display: var(--header-display);
-    text-align: bottom;
-  	line-height: 0;
-	  padding-bottom: 1em;
+.ZenariiBody {
+    color: #990000;
 }
 
-.header-title a
-{
-    color:inherit;
+.NavBarWrapper {
+    text-align: center;
+}
+
+.NavBar {
+    list-style-type: none;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+
+    padding: 0;
+}
+
+.NavBar li {
+    display: inline-block;
+}
+
+.NavBar li a {
+    display: inline-block;
+    color: black;
+    padding: 8px;
+    padding-left: 24px;
+    padding-right: 24px;
     text-decoration: none;
-    font-family: 'NameFont';   
 }
 
-.header-links
-{
-    display: var(--header-display);
-    margin-top: 0em;
-    vertical-align: bottom;
-    padding-left: 4em;
-    text-align: right;
-    float: var(--link-float);
+.NavBar li a:hover {
+    background-color: var(--colour-clear);
+    border-bottom-style: solid;
+    border-width: 1px;
+    padding-bottom: 7px;
+    border-color: var(--colour-dark);
 }
 
-.header-link
-{
-	vertical-align: middle;
-  font-size: 1.2em;
-  color: var(--highlight-color);
-  text-decoration: none;
-  margin-left:0.5em;
-  margin-right:0.5em;
-	line-height: 0;
-  text-align: right;
-	display: var(--header-display);
-  font-family: 'LinksFont';
+.active {
+    background-color: rgb(255, 0, 0);
 }
 
-.content a{
-  text-decoration: none;
-  margin-top:0;
+
+.ImageTextColumn {
+    float: left;
+    width: 50%;
+    overflow: hidden;
+    background-color: var(--colour-clear);
+    text-align:center;
+    height:inherit;
 }
 
-.content-heading {
-  font-size: 2.4em;
-  color: darkgray;
-  font-family: 'NameFont';
+.SpacedColumn {
+    float: left;
+    width: 45%;
+    overflow: hidden;
+    background-color: var(--colour-clear);
+    text-align:center;
+    height:inherit;
 }
 
-.content-text-body {
-  font-size: 1.5em;
+.SpacedColumnSpace {
+    float: left;
+    width: 10%;
+    overflow: hidden;
+    background-color: var(--colour-background);
+    text-align:center;
+    height:inherit;
 }
 
-.project {
-  text-align:center;
+.TextBoxTitle {
+    font-size: 3rem;
+    padding-top: 0;
+    padding-bottom: 16px;
 }
 
-.project-image {
-  background-size: auto 200%;
-  background-repeat: no-repeat;
-  height: 25em;
+.TextBoxSubTitle {
+    font-size:  4rem;
+    padding: 8px;
+    padding-bottom: 30px;
 }
 
-.project-name {
-  margin-top: auto;
-  margin-bottom: auto;
-  color: var(--project-text-color);
-  top:50%;
-  bottom:50%;
+.HTMLButton {
+    padding: 8px;
+    background-color: var(--colour-light);
+    text-decoration: none;
+    width: 200px;
+    margin: auto;
+    font-size: 2rem;
+
 }
 
-.footer {
-    width: var(--default-content-width);
-	  max-height: 2em;
-	  padding-left: 0em;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2em;
-    padding-top: 0.5em;
+.HTMLButton:hover {
+    background-color: var(--colour-dark);
+    text-decoration: none;
+    width: 100px;
+    margin: auto;
+}
+
+.HTMLButton a{
+    text-decoration: none;
+    color: black;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.VerticalWrapper {
+    display: table;
+    width:  100%;
+    height: inherit;
+}
+
+.VerticalContent {
+    display: table-cell;
     vertical-align: middle;
-    border-top-style: solid;
-    border-top-width: 2px;
-    border-top-color: var(--default-seperator-color);
-    color: var(--default-text-color);
+}
+
+.SocialMedia {
+    padding: 40px;
 }
