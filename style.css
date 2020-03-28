@@ -9,7 +9,7 @@
 
 body {
   background-color: var(--colour-background);
-  width: 70%;
+  width: 80%;
   margin: auto;
   text-decoration: none;
 }
@@ -200,4 +200,18 @@ body {
 ::selection {
     color: white;
     background: red;
+}
+
+.Download {
+    background-color: var(--colour-clear);
+    font-family: 'OpenSans';
+    padding:10px;
+    padding-left:20px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: var(--colour-text);
+}
+
+a {
+    text-decoration: none;
 }
