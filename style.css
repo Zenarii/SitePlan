@@ -215,3 +215,24 @@ body {
 a {
     text-decoration: none;
 }
+
+/*
+    CSS for blog posts
+*/
+.BlogTitle {
+    font-family: 'Roboto';
+}
+.Byline {
+    color: #3c3d3b;
+    font-family: 'OpenSans';
+    text-align: center;
+}
+
+.BlogImage {
+    text-align: center;
+}
+.BlogImageCaption {
+    color: #3c3d3b;
+    font-family: 'OpenSans';
+    font-size: 1.5rem;
+}
