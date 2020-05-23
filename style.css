@@ -172,6 +172,10 @@ p a:hover {
 
 /* Mobile css */
 @media only screen and (max-width: 600px) {
+    body {
+        width: 95%;
+    }
+
     /* Make Columns collapse to 1 per row */
     .Columns {
         display:block;
@@ -182,7 +186,7 @@ p a:hover {
     .Column {
         border-radius: 0px;
         float: none;
-        width: 95%;
+        width: 100%;
 
         overflow: hidden;
         background-color: var(--ColourColumn);
