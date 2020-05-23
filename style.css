@@ -115,13 +115,13 @@ p a:hover {
 
 /* Selected text colour */
 ::-moz-selection { /* Code for Firefox */
-    color: red;
-    background: var(--colour-selection);
+    color: var(--nord12);
+    background: var(--nord6);
 }
 
 ::selection {
-    color: var(--colour-title);
-    background: var(--colour-selection);
+    color: var(--nord12);
+    background: var(--nord6);
 }
 
 
@@ -168,4 +168,11 @@ p a:hover {
     border-width: 1px;
     padding-bottom: 7px;
     border-color: var(--colour-dark);
+}
+
+/* Mobile css */
+@media only screen and (max-width: 600px) {
+    .Columns {
+        display: contents;
+    }
 }
