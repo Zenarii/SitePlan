@@ -172,6 +172,7 @@ p a:hover {
 
 /* Mobile css */
 @media only screen and (max-width: 600px) {
+    /* Make Columns collapse to 1 per row */
     .Columns {
         display:block;
         padding-bottom: 20px;
@@ -181,7 +182,8 @@ p a:hover {
     .Column {
         border-radius: 0px;
         float: none;
-        width: 100%;
+        width: 95%;
+
         overflow: hidden;
         background-color: var(--ColourColumn);
         text-align: center;
@@ -193,8 +195,53 @@ p a:hover {
     }
 
     .Column p {
-        width: 100%;
+        width: 90%;
+        margin: auto;
+        text-align: center;
         margin-top: 5px;
         margin-bottom: 5px;
     }
+
+    /* Make Header centered */
+    .HeaderWrapper {
+        text-align:center;
+    }
+    .HeaderTitle a {
+        display: inline-block;
+        width: auto;
+        font-size: 3rem;
+        text-decoration: none;
+        color: var(--ColourTitle);
+        /* font-family: 'Roboto'; */
+    }
+
+    .Header {
+        list-style-type: none;
+        margin: auto;
+        overflow: hidden;
+        text-align: center;
+        display: inline-block;
+        font-family: 'Title';
+    }
+
+    .HeaderLinks {
+        display: inline-block;
+    }
+
+    .HeaderLink {
+        display: inline-block;
+        color: var(--ColourTitle);
+        padding: 5px;
+        text-decoration: none;
+        font-family: 'Title';
+    }
+
+    .HeaderLink:hover {
+        background-color: var(--colour-clear);
+        border-bottom-style: solid;
+        border-width: 1px;
+        padding-bottom: 7px;
+        border-color: var(--colour-dark);
+    }
+
 }
