@@ -45,7 +45,7 @@
 
 body {
     background-color: var(--ColourBackground);
-    width: 60%;
+    width: 80%;
     margin: auto;
     text-decoration: none;
 }
@@ -171,7 +171,7 @@ p a:hover {
 }
 
 /* Mobile css */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
     body {
         width: 95%;
     }
