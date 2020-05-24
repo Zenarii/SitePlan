@@ -85,6 +85,11 @@ p a:hover {
 	border-bottom-width: 1px;
 }
 
+.ImageContainer img {
+    border-radius: 25px;
+    width: 30%;
+}
+
 /*CSS for the @Column tag and variants*/
 
 .Columns {
@@ -107,16 +112,23 @@ p a:hover {
 
 .Column img {
     object-fit: fill;
-    border: 0;
-}
+    width: 100%;
 
-.Column a img {
-    object-fit: fill;
-    border: 0;
 }
 
 .Column p {
     width: 90%;
+}
+
+
+/* Linked Images */
+.Column a img {
+    object-fit: fill;
+    width: 100%;
+}
+
+.Column a {
+    display: flex;
 }
 
 /* For columns with a sub title and some text */
@@ -124,7 +136,14 @@ p a:hover {
     text-align: center;
     margin: auto;
 }
-.Column
+
+.Column div h2 {
+    padding-bottom: 20px;
+}
+
+.Column div p {
+    width: 100%;
+}
 
 /* Selected text colour */
 ::-moz-selection { /* Code for Firefox */
