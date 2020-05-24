@@ -115,7 +115,7 @@ p a:hover {
 }
 
 .Column img {
-    object-fit: fill;
+    object-fit: cover;
     width: 100%;
 
 }
@@ -127,7 +127,7 @@ p a:hover {
 
 /* Linked Images */
 .Column a img {
-    object-fit: fill;
+    object-fit: cover;
     width: 100%;
 }
 
