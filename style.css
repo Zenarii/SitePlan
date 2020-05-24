@@ -98,16 +98,17 @@ p a:hover {
 
 .Columns {
     display:flex;
-    padding-bottom: 20px;
-
+    margin-bottom: 20px;
+    border-radius: 25px;
+    background-color: var(--ColourColumn);
 }
 
 .Column {
-    border-radius: 25px;
+
     float: left;
     width: 50%;
     overflow: hidden;
-    background-color: var(--ColourColumn);
+
     text-align:center;
     display: flex;
     align-items: center;
@@ -117,7 +118,8 @@ p a:hover {
 .Column img {
     object-fit: cover;
     width: 100%;
-
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
 }
 
 .Column p {
@@ -129,6 +131,9 @@ p a:hover {
 .Column a img {
     object-fit: cover;
     width: 100%;
+
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
 }
 
 .Column a {
@@ -217,6 +222,7 @@ p a:hover {
         display:block;
         padding-bottom: 20px;
         text-align: center;
+        border-radius: 0;
     }
 
     .Column {
@@ -232,6 +238,19 @@ p a:hover {
 
     .Column img {
         object-fit: cover;
+        border-radius: 0;
+    }
+
+    .Column a {
+        width: 100%;
+    }
+
+    .Column a img {
+        object-fit: cover;
+        width: 100%;
+
+        border-radius: 0px;
+
     }
 
     .Column p {
@@ -287,6 +306,13 @@ p a:hover {
     .ImageContainer img {
         border-radius: 15px;
         width: 80%;
+    }
+
+}
+@media only screen and (min-width: 1700px) {
+
+    .Column a {
+        width: 100%;
     }
 
 }
