@@ -90,6 +90,10 @@ p a:hover {
     width: 30%;
 }
 
+.ImageContainer {
+    padding-bottom: 20px;
+}
+
 /*CSS for the @Column tag and variants*/
 
 .Columns {
@@ -278,6 +282,11 @@ p a:hover {
         border-width: 1px;
         padding-bottom: 7px;
         border-color: var(--colour-dark);
+    }
+
+    .ImageContainer img {
+        border-radius: 15px;
+        width: 80%;
     }
 
 }
