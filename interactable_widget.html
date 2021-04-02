@@ -1,0 +1,45 @@
+<form>
+<input id='income' type='number' step='1' min='0' placeholder='Yearly income'>
+<input id='rent' type='number' step='1' min='0' placeholder='Monthly rent/mortgage'>
+<input id='savings' readonly placeholder='Yearly savings'>
+</form>
+<script>
+const AdditionalTaxBound = 150000; const AdditionalTaxIncrease = 0.3;
+const HigherTaxBound = 50000;      const HigherTaxIncrease = 0.26;
+const BasicTaxBound = 12500;       const BasicTaxIncrease = 0.22;
+
+function CalculateSavings() {
+	let CostOfTax = 0;
+    let Income = parseFloat(document.getElementById("income").value);
+    
+    if(Income > AdditionalTaxBound) {
+    	CostOfTax += (Income-AdditionalTaxBound) * AdditionalTaxIncrease;
+        Income = AdditionalTaxBound;
+    }
+    if(Income > HigherTaxBound) {
+    	CostOfTax += (Income-HigherTaxBound) * HigherTaxIncrease;
+        Income = HigherTaxBound;
+    }
+    if(Income > BasicTaxBound) {
+    	CostOfTax += (Income-BasicTaxBound) * BasicTaxIncrease;
+        Income = BasicTaxBound;
+    }
+    
+    let RentBox = document.getElementById('rent');
+    let Rent = parseFloat(RentBox.value) * 12; //from £/month to £/year
+    
+    let SavingsBox = document.getElementById("savings");
+    SavingsBox.value = Rent-CostOfTax;
+    if(isNaN(Rent-CostOfTax)) SavingsBox.value = "";
+}
+
+function main() {
+	  let IncomeBox = document.getElementById('income');
+  	IncomeBox.addEventListener("input", function(Event) { CalculateSavings() });
+  	let RentBox = document.getElementById('rent');
+  	RentBox.addEventListener("input", function(Event) { CalculateSavings() });
+}
+
+//spot the C programmer haha
+main();
+</script>

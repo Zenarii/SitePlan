@@ -25,27 +25,27 @@
     */
     --ColourText: var(--nord6);
     --ColourBackground: var(--nord0);
-    --ColourLink: var(--nord12);
+    --ColourLink: var(--nord14);
     --ColourCodeBackground: var(--nord1);
     --ColourColumn: var(--nord2);
-    --ColourTitle: var(--nord4);
+    --ColourTitle: var(--nord12);
 }
 
 @font-face
 {
     font-family: 'Title';
-    src: url('Data/Fonts/Oxygen-Bold.ttf') format('truetype');
+    src: url('Oxygen-Bold.ttf') format('truetype');
 }
 
 @font-face
 {
     font-family: 'Text';
-    src: url('Data/Fonts/OpenSans-Regular.ttf') format('truetype');
+    src: url('OpenSans-Regular.ttf') format('truetype');
 }
 
 body {
     background-color: var(--ColourBackground);
-    width: 80%;
+    width: 50%;
     margin: auto;
     text-decoration: none;
 }
@@ -175,7 +175,7 @@ p a:hover {
     width: 300px;
     font-size: 3rem;
     text-decoration: none;
-    color: var(--ColourTitle);
+    color: var(--nord5);
     /* font-family: 'Roboto'; */
 }
 
@@ -194,13 +194,12 @@ p a:hover {
 
 .HeaderLink {
     display: inline-block;
-    color: var(--ColourTitle);
+	color: var(--nord5);
     padding: 8px;
     padding-left: 24px;
     padding-right: 24px;
     text-decoration: none;
     font-family: 'Title';
-    color:
 }
 
 .HeaderLink:hover {
@@ -315,4 +314,48 @@ p a:hover {
         width: 100%;
     }
 
+}
+
+/* Remove arrows from number input */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+form {
+	width: 100%;
+	text-align: center;
+	font-family: 'Title';
+}
+input {
+	font-family: 'Title';
+}
+
+table {
+	font-family: 'Title', 'Text';
+	border-collapse: collapse;
+	width: 100%;
+	color: var(--nord6);
+}
+
+td, th {
+	border: 1px solid var(--nord4);
+	text-align: left;
+	padding: 8px;
+}
+
+th { font-family:'Title' }
+td { font-family:'Text' }
+
+tr:nth-child(odd) {
+	background-color: var(--nord1);
+}
+
+tr:nth-child(even) {
+	background-color: var(--nord2);
 }
