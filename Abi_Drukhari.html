@@ -1,0 +1,1021 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=670"> 
+<style>		@import url('https://fonts.googleapis.com/css?family=Oswald:600|EB+Garamond:400,400i,700');
+		
+		@media only print
+		{
+			div.battlescribe { columns: 200px 2; }
+			li.rootselection > h4 { font-size: 12px; }
+			div.battlescribe { font-size: 10px; }
+			div.battlescribe p { font-size: 10px; }
+			div.battlescribe table { font-size: 10px; }
+			div.battlescribe h4 { font-size: 13px; }
+			div.battlescribe li.force { margin: 0px 10px 6px 0px; }
+			div.battlescribe h1 { font-size: 24px; }
+			div.battlescribe h2 { font-size: 20px; }
+		
+			div.battlescribe div.summary
+			{
+				page-break-before: avoid;
+				page-break-inside: avoid;
+				margin-right: 10px;
+				float: left;
+			}
+		
+			th { padding: 4px; }
+			td { padding: 4px; }
+		}
+		
+		@media only screen
+		{
+			div.battlescribe div.summary
+			{
+				width: 100%;
+				max-width: 650px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		
+			div.battlescribe li.force
+			{
+				margin-right: auto;
+				margin-left: auto;
+				width: 100%;
+				max-width: 650px;
+			}
+		
+			div.battlescribe { font-size: 12px; }
+			div.battlescribe h1 { font-size: 28px; }
+			div.battlescribe p { font-size: 12px; }
+			div.battlescribe table { font-size: 12px; }
+			div.battlescribe h4 { font-size: 16px; }
+			div.battlescribe li.rootselection { margin-bottom: 0px; }
+			div.battlescribe h2 { font-size: 25px; }
+		
+			div.battlescribe h1
+			{
+				width: 100%;
+				max-width: 650px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		
+			th { padding: 4px; }
+			td { padding: 4px; }
+			th:first-of-type { padding-left: 16px; }
+			th:last-of-type { padding-right: 16px; }
+			td:first-of-type { padding-left: 16px; }
+			td:last-of-type { padding-right: 16px; }
+		}
+		
+		li.force > p.rule-names { display: none; }
+		
+		body.battlescribe
+		{
+			margin: 0px;
+			padding: 0px;
+			border-width: 0px;
+		}
+		
+		div.battlescribe
+		{
+			margin-top: 0px;
+			margin-bottom: 0px;
+			margin-left: auto;
+			margin-right: auto;
+			padding: 8px;
+			border-width: 0px;
+			font-family: 'Minion Pro', 'EB Garamond', 'Book Antiqua', Palatino, serif;
+			color: #444444;
+			text-align: left;
+		}
+		
+		div.battlescribe h2,
+		          div.battlescribe h3,
+		          div.battlescribe h4
+		{
+			margin: 0px;
+			padding: 0px;
+			border-width: 0px;
+			line-height: 1em;
+		}
+		
+		div.battlescribe h1
+		{
+			margin-top: 8px;
+			font-family: 'Oswald', sans-serif;
+			color: #E1501E;
+			text-align: left;
+			text-transform: uppercase;
+			line-height: 1.1em;
+		}
+		
+		div.battlescribe h2
+		{
+			font-family: 'Oswald', sans-serif;
+			color: #222E33;
+			text-transform: uppercase;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 20px;
+			padding-top: 10px;
+			margin-top: 30px;
+			border-top: 3px #E1501E solid;
+			line-height: 1.1em;
+		}
+		
+		div.battlescribe h3
+		{
+			font-size: 20px;
+			font-family: 'Oswald', sans-serif;
+			color: #222E33;
+			text-transform: uppercase;
+			text-align: left;
+			margin-bottom: 5px;
+		}
+		
+		li.rootselection > h4
+		{
+			font-family: 'Oswald', sans-serif;
+			font-size: 16px;
+			padding-bottom: 5px;
+			padding-left: 5px;
+			color: #E1501E;
+			text-transform: uppercase;
+		}
+		
+		div.battlescribe h1 + p, .battlescribe > p:first-of-type
+		{
+			width: 50%;
+			max-width: 400px;
+			min-width: 200px;
+			margin-right: auto;
+			margin-left: auto;
+			margin-bottom: 20px;
+			font-style: italic;
+			border-width: 1px;
+			border-style: solid;
+			padding: 10px;
+			border-color: #E1501E;
+		}
+		
+		div.battlescribe h1 + p::before, .battlescribe > p:first-of-type::before
+		{
+			content: "Roster notes: ";
+			font-weight: bold;
+			font-style: normal;
+		}
+		
+		div.summary h2
+		{
+			margin-top: 20px;
+			margin-bottom: 10px;
+			padding: 0px;
+			border-width: 0px;
+			font-family: 'Oswald', sans-serif;
+			font-size: 20px;
+			text-align: left;
+			padding-top: 10px;
+			border-top: 3px #E1501E solid;
+		}
+		
+		li.rootselection > ul > li > h4
+		{
+			font-variant: small-caps;
+			padding-left: 5px;
+		}
+		
+		div.battlescribe div.summary
+		{
+			page-break-before: avoid;
+			page-break-inside: avoid;
+		}
+		
+		div.battlescribe div.summary p
+		{
+			padding: 10px;
+			border: 1px #E1501E solid;
+			margin-left: 0px;
+		}
+		
+		div.battlescribe ul
+		{
+			margin: 0px 0px -5px 0px;
+			padding: 0px;
+			border-width: 0px;
+			list-style-image: none;
+			list-style-position: outside;
+			list-style-type: none;
+		}
+		
+		div.battlescribe li
+		{
+			margin: 8px 0px 0px 0px;
+			padding: 0px;
+			border-width: 0px;
+		}
+		
+		div.battlescribe li.force
+		{
+			margin-bottom: 16px;
+			padding: 0px;
+			border-width: 0px;
+		}
+		
+		div.battlescribe li.category
+		{
+			margin: 0px 0px 16px 0px;
+			padding: 0px;
+			border-width: 0px;
+			break-before: page;
+		}
+		
+		div.battlescribe li.rootselection
+		{
+			padding-top: 5px;
+			border-width: 1px;
+			border-style: solid;
+			border-color: #E1501E;
+			page-break-inside: avoid;
+			line-height: 1.1em;
+		}
+		
+		div.battlescribe p
+		{
+			margin: 4px 0px 0px 16px;
+			padding: 0px;
+			border-width: 0px;
+		}
+		
+		div.battlescribe p.category-names { margin-bottom: 5px; margin-right: 3px; }
+		div.battlescribe p.rule-names { }
+		div.battlescribe p.profile-names { margin-right: 3px; }
+		
+		div.battlescribe table
+		{
+			margin-bottom: 0px;
+			margin-right: auto;
+			margin-left: auto;
+			padding: 0px;
+			border-collapse: collapse;
+			width: 100%;
+			color: #444444;
+			page-break-inside: avoid;
+		}
+		
+		tr:first-of-type
+		{
+		  border-width: 1px 0px 0px 0px;
+		  border-style: solid;
+		  border-color: black;
+		}
+		
+		tr:nth-child(even) { background-color: #FBE6DC; }
+		tr:nth-child(odd) { background: #FFF; }
+		
+		div.battlescribe th
+		{
+			margin: 0px;
+			border-width: 0px;
+			color: black;
+			font-weight: bold;
+			text-align: left;
+			background-color: #E1501E;
+		}
+		
+		div.battlescribe td
+		{
+			margin: 0px;
+			border-width: 0px;
+			text-align: left;
+			line-height: 1.1em;
+			vertical-align: top;
+		}
+		
+		div.battlescribe td.profile-name { font-weight: bold; }
+		div.battlescribe td.statistic-name { font-weight: bold; }
+		div.battlescribe table.statistics { }
+		div.battlescribe table.statistics tr.subtotal { font-weight: bold; }
+		
+		div.battlescribe table.statistics tr.total
+		{
+			font-size: 13px;
+			font-weight: bold;
+		}
+		
+		div.battlescribe table.statistics th
+		{
+			border-width: 1px;
+			border-style: solid;
+			border-color: #BBBBBB;
+			font-size: 13px;
+			text-align: right;
+		}
+		
+		div.battlescribe table.statistics th.center { text-align: center; }
+		
+		div.battlescribe table.statistics td
+		{
+			border-width: 4px;
+			border-style: solid;
+			border-color: #BBBBBB;
+			text-align: right;
+		}
+		
+		div.battlescribe span.bold { font-weight: bold; }
+		div.battlescribe span.italic { font-style: italic; }
+		
+		div.battlescribe span.caps
+		{
+			font-variant: small-caps;
+			font-weight: bold;
+		}
+		
+		br + p { display: none; }
+	</style>
+
+
+    </head>
+    <body class="battlescribe">
+        <div class="battlescribe">
+            <h1>New Roster (Warhammer 40,000: Kill Team (2018)) [125pts]</h1>
+            <ul>
+            <li class="force">
+                <h2>Kill Team List (Drukhari) [125pts]</h2>
+                <p class="rule-names">
+                    <span class="bold">Rules:</span> <span class="italic">Connoisseurs of Pain (The Prophets of Flesh)</span>
+                </p>
+                <ul>
+                    <li class="category">
+                        <h3>Configuration</h3>
+                        <ul>
+                            <li class="rootselection">
+                                <h4>List Configuration</h4>
+                                <p>
+                                    <span class="bold">Selections:</span> Matched Play: Kill Team
+                                </p>
+                                <p class="category-names">
+                                    <span class="bold">Categories:</span> <span class="caps">Configuration, Style: Matched, List: Kill Team, List: Battle-Forged Kill Team</span>
+                                </p>
+
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="category">
+                        <h3>Leader [11pts]</h3>
+                        <ul>
+                            <li class="rootselection">
+                                <h4>Acothyst [11pts]</h4>
+                                <p>
+                                    <span class="bold">Selections:</span> Scissorhand [2pts], The Prophets of Flesh
+                                </p>
+                                <p class="category-names">
+                                    <span class="bold">Categories:</span> <span class="caps">Faction: Drukhari, Aeldari, Haemonculus Coven, Infantry, Wrack, Model, Leader, The Prophets of Flesh</span>
+                                </p>
+                                <p class="rule-names">
+                                    <span class="bold">Rules:</span> <span class="italic">Power From Pain</span>
+                                </p>
+                                <p class="profile-names">
+                                    <span class="bold">Ability:</span> <span class="italic">Insensible to Pain</span>, <span class="bold">Model:</span> <span class="italic">Acothyst</span>, <span class="bold">Weapon:</span> <span class="italic">Scissorhand</span>
+                                </p>
+                                <ul>
+                                    <li>
+                                        <h4>Leader</h4>
+                                        <p>
+                                            <span class="bold">Selections:</span> Level 1: Resourceful
+                                        </p>
+                                        <p class="category-names">
+                                            <span class="bold">Categories:</span> <span class="caps">Level 1</span>
+                                        </p>
+                                        <p class="profile-names">
+                                            <span class="bold">Ability:</span> <span class="italic">Resourceful</span>
+                                        </p>
+
+                                    </li>
+                                </ul>
+                                    <br>
+                                    <table cellspacing="-1">
+                                        <tbody><tr>
+                                            <th>Ability</th>
+                                            <th>Description</th>
+                                            <th>Ref</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Insensible to Pain</td>
+                                            <td>This model has a 5+ invulnerable save.</td>
+                                            <td>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Resourceful</td>
+                                            <td>As long as this model is
+ on the battlefield and not shaken, you gain an additional Command Point
+ at the beginning of the battle round.</td>
+                                            <td>
+                                                Core Manual p68
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+                                    <table cellspacing="-1">
+                                        <tbody><tr>
+                                            <th>Model</th>
+                                            <th>M</th><th>WS</th><th>BS</th><th>S</th><th>T</th><th>W</th><th>A</th><th>Ld</th><th>Sv</th><th>Max</th>
+                                            <th>Ref</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Acothyst</td>
+                                            <td>7"</td><td>3+</td><td>3+</td><td>3</td><td>4</td><td>1</td><td>3</td><td>8</td><td>6+</td><td>1</td>
+                                            <td>
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+                                    <table cellspacing="-1">
+                                        <tbody><tr>
+                                            <th>Weapon</th>
+                                            <th>Range</th><th>Type</th><th>S</th><th>AP</th><th>D</th><th>Abilities</th>
+                                            <th>Ref</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Scissorhand</td>
+                                            <td>Melee</td><td>Melee</td><td>*</td><td>-1</td><td>1</td><td>Each time the bearer fights, it can make 1 additional attack with this weapon. This weapon always wounds on a roll of 4+.</td>
+                                            <td>
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="category">
+                        <h3>Specialists [66pts]</h3>
+                        <ul>
+                            <li class="rootselection">
+                                <h4>Grotesque [38pts]</h4>
+                                <p>
+                                    <span class="bold">Selections:</span> Flesh gauntlet, Monstrous cleaver, The Prophets of Flesh
+                                </p>
+                                <p class="category-names">
+                                    <span class="bold">Categories:</span> <span class="caps">Faction: Drukhari, Aeldari, Haemonculus Coven, Infantry, Grotesque, Model, Specialist, The Prophets of Flesh</span>
+                                </p>
+                                <p class="rule-names">
+                                    <span class="bold">Rules:</span> <span class="italic">Power From Pain</span>
+                                </p>
+                                <p class="profile-names">
+                                    <span class="bold">Ability:</span> <span class="italic">Insensible to Pain</span>, <span class="bold">Model:</span> <span class="italic">Grotesque</span>, <span class="bold">Weapon:</span> <span class="italic">Flesh gauntlet, Monstrous cleaver</span>
+                                </p>
+                                <ul>
+                                    <li>
+                                        <h4>Zealot</h4>
+                                        <p>
+                                            <span class="bold">Selections:</span> Level 1: Frenzied
+                                        </p>
+                                        <p class="category-names">
+                                            <span class="bold">Categories:</span> <span class="caps">Level 1</span>
+                                        </p>
+                                        <p class="profile-names">
+                                            <span class="bold">Ability:</span> <span class="italic">Frenzied</span>
+                                        </p>
+
+                                    </li>
+                                </ul>
+                                    <br>
+                                    <table cellspacing="-1">
+                                        <tbody><tr>
+                                            <th>Ability</th>
+                                            <th>Description</th>
+                                            <th>Ref</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Frenzied</td>
+                                            <td>You can add 1 to this model's Attacks and Strength characteristics in a battle round in which they charged.</td>
+                                            <td>
+                                                Core Manual p77
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Insensible to Pain</td>
+                                            <td>This model has a 5+ invulnerable save.</td>
+                                            <td>
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+                                    <table cellspacing="-1">
+                                        <tbody><tr>
+                                            <th>Model</th>
+                                            <th>M</th><th>WS</th><th>BS</th><th>S</th><th>T</th><th>W</th><th>A</th><th>Ld</th><th>Sv</th><th>Max</th>
+                                            <th>Ref</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Grotesque</td>
+                                            <td>7"</td><td>3+</td><td>6+</td><td>5</td><td>5</td><td>4</td><td>4</td><td>8</td><td>6+</td><td>-</td>
+                                            <td>
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+                                    <table cellspacing="-1">
+                                        <tbody><tr>
+                                            <th>Weapon</th>
+                                            <th>Range</th><th>Type</th><th>S</th><th>AP</th><th>D</th><th>Abilities</th>
+                                            <th>Ref</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Flesh gauntlet</td>
+                                            <td>Melee</td><td>Melee</td><td>User</td><td>0</td><td>1</td><td>Each time you roll a wound roll of 6+ for this weapon , the target suffers a mortal wound in addition to any other damage.</td>
+                                            <td>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Monstrous cleaver</td>
+                                            <td>Melee</td><td>Melee</td><td>User</td><td>-2</td><td>1</td><td>Each time the bearer fights, it can make 1 additional attack with this weapon.</td>
+                                            <td>
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+
+                            </li>
+                            <li class="rootselection">
+                                <h4>Wrack Gunner [14pts]</h4>
+                                <p>
+                                    <span class="bold">Selections:</span> Haemonculus tools, Ossefactor [5pts], The Prophets of Flesh
+                                </p>
+                                <p class="category-names">
+                                    <span class="bold">Categories:</span> <span class="caps">Faction: Drukhari, Aeldari, Haemonculus Coven, Infantry, Wrack, Model, Specialist, The Prophets of Flesh</span>
+                                </p>
+                                <p class="rule-names">
+                                    <span class="bold">Rules:</span> <span class="italic">Power From Pain</span>
+                                </p>
+                                <p class="profile-names">
+                                    <span class="bold">Ability:</span> <span class="italic">Insensible to Pain</span>, <span class="bold">Model:</span> <span class="italic">Wrack Gunner</span>, <span class="bold">Weapon:</span> <span class="italic">Haemonculus tools, Ossefactor</span>
+                                </p>
+                                <ul>
+                                    <li>
+                                        <h4>Demolitions</h4>
+                                        <p>
+                                            <span class="bold">Selections:</span> Level 1: Breacher
+                                        </p>
+                                        <p class="category-names">
+                                            <span class="bold">Categories:</span> <span class="caps">Level 1</span>
+                                        </p>
+                                        <p class="profile-names">
+                                            <span class="bold">Ability:</span> <span class="italic">Breacher</span>
+                                        </p>
+
+                                    </li>
+                                </ul>
+                                    <br>
+                                    <table cellspacing="-1">
+                                        <tbody><tr>
+                                            <th>Ability</th>
+                                            <th>Description</th>
+                                            <th>Ref</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Breacher</td>
+                                            <td>You can add 1 to this model's wound rolls against targets that are obscured.</td>
+                                            <td>
+                                                Core Manual p71
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Insensible to Pain</td>
+                                            <td>This model has a 5+ invulnerable save.</td>
+                                            <td>
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+                                    <table cellspacing="-1">
+                                        <tbody><tr>
+                                            <th>Model</th>
+                                            <th>M</th><th>WS</th><th>BS</th><th>S</th><th>T</th><th>W</th><th>A</th><th>Ld</th><th>Sv</th><th>Max</th>
+                                            <th>Ref</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Wrack Gunner</td>
+                                            <td>7"</td><td>3+</td><td>3+</td><td>3</td><td>4</td><td>1</td><td>2</td><td>7</td><td>6+</td><td>2</td>
+                                            <td>
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+                                    <table cellspacing="-1">
+                                        <tbody><tr>
+                                            <th>Weapon</th>
+                                            <th>Range</th><th>Type</th><th>S</th><th>AP</th><th>D</th><th>Abilities</th>
+                                            <th>Ref</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Haemonculus tools</td>
+                                            <td>Melee</td><td>Melee</td><td>*</td><td>0</td><td>1</td><td>This weapon always wounds on a roll of 4+.</td>
+                                            <td>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Ossefactor</td>
+                                            <td>24"</td><td>Assault 1</td><td>*</td><td>-3</td><td>1</td><td>This
+ weapon always wounds on a roll of 2+. If a model is taken out of action
+ by an attack made by this weapon, roll a D6 for each model within 2" of
+ that model. On a roll of 5+, that model suffers a mortal wound.</td>
+                                            <td>
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+
+                            </li>
+                            <li class="rootselection">
+                                <h4>Wrack Gunner [14pts]</h4>
+                                <p>
+                                    <span class="bold">Selections:</span> Haemonculus tools, Ossefactor [5pts], The Prophets of Flesh
+                                </p>
+                                <p class="category-names">
+                                    <span class="bold">Categories:</span> <span class="caps">Faction: Drukhari, Aeldari, Haemonculus Coven, Infantry, Wrack, Model, Specialist, The Prophets of Flesh</span>
+                                </p>
+                                <p class="rule-names">
+                                    <span class="bold">Rules:</span> <span class="italic">Power From Pain</span>
+                                </p>
+                                <p class="profile-names">
+                                    <span class="bold">Ability:</span> <span class="italic">Insensible to Pain</span>, <span class="bold">Model:</span> <span class="italic">Wrack Gunner</span>, <span class="bold">Weapon:</span> <span class="italic">Haemonculus tools, Ossefactor</span>
+                                </p>
+                                <ul>
+                                    <li>
+                                        <h4>Heavy</h4>
+                                        <p>
+                                            <span class="bold">Selections:</span> Level 1: Relentless
+                                        </p>
+                                        <p class="category-names">
+                                            <span class="bold">Categories:</span> <span class="caps">Level 1</span>
+                                        </p>
+                                        <p class="profile-names">
+                                            <span class="bold">Ability:</span> <span class="italic">Relentless</span>
+                                        </p>
+
+                                    </li>
+                                </ul>
+                                    <br>
+                                    <table cellspacing="-1">
+                                        <tbody><tr>
+                                            <th>Ability</th>
+                                            <th>Description</th>
+                                            <th>Ref</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Insensible to Pain</td>
+                                            <td>This model has a 5+ invulnerable save.</td>
+                                            <td>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Relentless</td>
+                                            <td>This model does not 
+suffer the -1 penalty for shooting with a Heavy weapon after moving in 
+the preceding Movement phase, or for shooting an Assault weapon after 
+Advancing.</td>
+                                            <td>
+                                                Core Manual p72
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+                                    <table cellspacing="-1">
+                                        <tbody><tr>
+                                            <th>Model</th>
+                                            <th>M</th><th>WS</th><th>BS</th><th>S</th><th>T</th><th>W</th><th>A</th><th>Ld</th><th>Sv</th><th>Max</th>
+                                            <th>Ref</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Wrack Gunner</td>
+                                            <td>7"</td><td>3+</td><td>3+</td><td>3</td><td>4</td><td>1</td><td>2</td><td>7</td><td>6+</td><td>2</td>
+                                            <td>
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+                                    <table cellspacing="-1">
+                                        <tbody><tr>
+                                            <th>Weapon</th>
+                                            <th>Range</th><th>Type</th><th>S</th><th>AP</th><th>D</th><th>Abilities</th>
+                                            <th>Ref</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Haemonculus tools</td>
+                                            <td>Melee</td><td>Melee</td><td>*</td><td>0</td><td>1</td><td>This weapon always wounds on a roll of 4+.</td>
+                                            <td>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Ossefactor</td>
+                                            <td>24"</td><td>Assault 1</td><td>*</td><td>-3</td><td>1</td><td>This
+ weapon always wounds on a roll of 2+. If a model is taken out of action
+ by an attack made by this weapon, roll a D6 for each model within 2" of
+ that model. On a roll of 5+, that model suffers a mortal wound.</td>
+                                            <td>
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="category">
+                        <h3>Non-specialists [48pts]</h3>
+                        <ul>
+                            <li class="rootselection">
+                                <h4>Mandrake [12pts]</h4>
+                                <p>
+                                    <span class="bold">Selections:</span> Baleblast, Glimmersteel blade
+                                </p>
+                                <p class="category-names">
+                                    <span class="bold">Categories:</span> <span class="caps">Faction: Drukhari, Aeldari, Infantry, Mandrake, Model, Non-specialist</span>
+                                </p>
+                                <p class="rule-names">
+                                    <span class="bold">Rules:</span> <span class="italic">Blades for Hire, Power From Pain</span>
+                                </p>
+                                <p class="profile-names">
+                                    <span class="bold">Ability:</span> <span class="italic">Shrouded from Sight</span>, <span class="bold">Model:</span> <span class="italic">Mandrake</span>, <span class="bold">Weapon:</span> <span class="italic">Baleblast, Glimmersteel blade</span>
+                                </p>
+                                    <br>
+                                    <table cellspacing="-1">
+                                        <tbody><tr>
+                                            <th>Ability</th>
+                                            <th>Description</th>
+                                            <th>Ref</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Shrouded from Sight</td>
+                                            <td>Subtract 1 from hit rolls for attacks that target this model. In addition, this model has a 5+ invulnerable save.</td>
+                                            <td>
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+                                    <table cellspacing="-1">
+                                        <tbody><tr>
+                                            <th>Model</th>
+                                            <th>M</th><th>WS</th><th>BS</th><th>S</th><th>T</th><th>W</th><th>A</th><th>Ld</th><th>Sv</th><th>Max</th>
+                                            <th>Ref</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Mandrake</td>
+                                            <td>8"</td><td>3+</td><td>3+</td><td>4</td><td>3</td><td>1</td><td>3</td><td>7</td><td>7+</td><td>-</td>
+                                            <td>
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+                                    <table cellspacing="-1">
+                                        <tbody><tr>
+                                            <th>Weapon</th>
+                                            <th>Range</th><th>Type</th><th>S</th><th>AP</th><th>D</th><th>Abilities</th>
+                                            <th>Ref</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Baleblast</td>
+                                            <td>18"</td><td>Assault 2</td><td>4</td><td>-1</td><td>1</td><td>Each time you make a wound roll of 6+ for this weapon, the target suffers a mortal wound in addition to any other damage.</td>
+                                            <td>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Glimmersteel blade</td>
+                                            <td>Melee</td><td>Melee</td><td>User</td><td>-1</td><td>1</td><td>-</td>
+                                            <td>
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+
+                            </li>
+                            <li class="rootselection">
+                                <h4>Mandrake [12pts]</h4>
+                                <p>
+                                    <span class="bold">Selections:</span> Baleblast, Glimmersteel blade
+                                </p>
+                                <p class="category-names">
+                                    <span class="bold">Categories:</span> <span class="caps">Faction: Drukhari, Aeldari, Infantry, Mandrake, Model, Non-specialist</span>
+                                </p>
+                                <p class="rule-names">
+                                    <span class="bold">Rules:</span> <span class="italic">Blades for Hire, Power From Pain</span>
+                                </p>
+                                <p class="profile-names">
+                                    <span class="bold">Ability:</span> <span class="italic">Shrouded from Sight</span>, <span class="bold">Model:</span> <span class="italic">Mandrake</span>, <span class="bold">Weapon:</span> <span class="italic">Baleblast, Glimmersteel blade</span>
+                                </p>
+                                    <br>
+                                    <table cellspacing="-1">
+                                        <tbody><tr>
+                                            <th>Ability</th>
+                                            <th>Description</th>
+                                            <th>Ref</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Shrouded from Sight</td>
+                                            <td>Subtract 1 from hit rolls for attacks that target this model. In addition, this model has a 5+ invulnerable save.</td>
+                                            <td>
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+                                    <table cellspacing="-1">
+                                        <tbody><tr>
+                                            <th>Model</th>
+                                            <th>M</th><th>WS</th><th>BS</th><th>S</th><th>T</th><th>W</th><th>A</th><th>Ld</th><th>Sv</th><th>Max</th>
+                                            <th>Ref</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Mandrake</td>
+                                            <td>8"</td><td>3+</td><td>3+</td><td>4</td><td>3</td><td>1</td><td>3</td><td>7</td><td>7+</td><td>-</td>
+                                            <td>
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+                                    <table cellspacing="-1">
+                                        <tbody><tr>
+                                            <th>Weapon</th>
+                                            <th>Range</th><th>Type</th><th>S</th><th>AP</th><th>D</th><th>Abilities</th>
+                                            <th>Ref</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Baleblast</td>
+                                            <td>18"</td><td>Assault 2</td><td>4</td><td>-1</td><td>1</td><td>Each time you make a wound roll of 6+ for this weapon, the target suffers a mortal wound in addition to any other damage.</td>
+                                            <td>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Glimmersteel blade</td>
+                                            <td>Melee</td><td>Melee</td><td>User</td><td>-1</td><td>1</td><td>-</td>
+                                            <td>
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+
+                            </li>
+                            <li class="rootselection">
+                                <h4>Mandrake [12pts]</h4>
+                                <p>
+                                    <span class="bold">Selections:</span> Baleblast, Glimmersteel blade
+                                </p>
+                                <p class="category-names">
+                                    <span class="bold">Categories:</span> <span class="caps">Faction: Drukhari, Aeldari, Infantry, Mandrake, Model, Non-specialist</span>
+                                </p>
+                                <p class="rule-names">
+                                    <span class="bold">Rules:</span> <span class="italic">Blades for Hire, Power From Pain</span>
+                                </p>
+                                <p class="profile-names">
+                                    <span class="bold">Ability:</span> <span class="italic">Shrouded from Sight</span>, <span class="bold">Model:</span> <span class="italic">Mandrake</span>, <span class="bold">Weapon:</span> <span class="italic">Baleblast, Glimmersteel blade</span>
+                                </p>
+                                    <br>
+                                    <table cellspacing="-1">
+                                        <tbody><tr>
+                                            <th>Ability</th>
+                                            <th>Description</th>
+                                            <th>Ref</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Shrouded from Sight</td>
+                                            <td>Subtract 1 from hit rolls for attacks that target this model. In addition, this model has a 5+ invulnerable save.</td>
+                                            <td>
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+                                    <table cellspacing="-1">
+                                        <tbody><tr>
+                                            <th>Model</th>
+                                            <th>M</th><th>WS</th><th>BS</th><th>S</th><th>T</th><th>W</th><th>A</th><th>Ld</th><th>Sv</th><th>Max</th>
+                                            <th>Ref</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Mandrake</td>
+                                            <td>8"</td><td>3+</td><td>3+</td><td>4</td><td>3</td><td>1</td><td>3</td><td>7</td><td>7+</td><td>-</td>
+                                            <td>
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+                                    <table cellspacing="-1">
+                                        <tbody><tr>
+                                            <th>Weapon</th>
+                                            <th>Range</th><th>Type</th><th>S</th><th>AP</th><th>D</th><th>Abilities</th>
+                                            <th>Ref</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Baleblast</td>
+                                            <td>18"</td><td>Assault 2</td><td>4</td><td>-1</td><td>1</td><td>Each time you make a wound roll of 6+ for this weapon, the target suffers a mortal wound in addition to any other damage.</td>
+                                            <td>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Glimmersteel blade</td>
+                                            <td>Melee</td><td>Melee</td><td>User</td><td>-1</td><td>1</td><td>-</td>
+                                            <td>
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+
+                            </li>
+                            <li class="rootselection">
+                                <h4>Mandrake [12pts]</h4>
+                                <p>
+                                    <span class="bold">Selections:</span> Baleblast, Glimmersteel blade
+                                </p>
+                                <p class="category-names">
+                                    <span class="bold">Categories:</span> <span class="caps">Faction: Drukhari, Aeldari, Infantry, Mandrake, Model, Non-specialist</span>
+                                </p>
+                                <p class="rule-names">
+                                    <span class="bold">Rules:</span> <span class="italic">Blades for Hire, Power From Pain</span>
+                                </p>
+                                <p class="profile-names">
+                                    <span class="bold">Ability:</span> <span class="italic">Shrouded from Sight</span>, <span class="bold">Model:</span> <span class="italic">Mandrake</span>, <span class="bold">Weapon:</span> <span class="italic">Baleblast, Glimmersteel blade</span>
+                                </p>
+                                    <br>
+                                    <table cellspacing="-1">
+                                        <tbody><tr>
+                                            <th>Ability</th>
+                                            <th>Description</th>
+                                            <th>Ref</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Shrouded from Sight</td>
+                                            <td>Subtract 1 from hit rolls for attacks that target this model. In addition, this model has a 5+ invulnerable save.</td>
+                                            <td>
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+                                    <table cellspacing="-1">
+                                        <tbody><tr>
+                                            <th>Model</th>
+                                            <th>M</th><th>WS</th><th>BS</th><th>S</th><th>T</th><th>W</th><th>A</th><th>Ld</th><th>Sv</th><th>Max</th>
+                                            <th>Ref</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Mandrake</td>
+                                            <td>8"</td><td>3+</td><td>3+</td><td>4</td><td>3</td><td>1</td><td>3</td><td>7</td><td>7+</td><td>-</td>
+                                            <td>
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+                                    <table cellspacing="-1">
+                                        <tbody><tr>
+                                            <th>Weapon</th>
+                                            <th>Range</th><th>Type</th><th>S</th><th>AP</th><th>D</th><th>Abilities</th>
+                                            <th>Ref</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Baleblast</td>
+                                            <td>18"</td><td>Assault 2</td><td>4</td><td>-1</td><td>1</td><td>Each time you make a wound roll of 6+ for this weapon, the target suffers a mortal wound in addition to any other damage.</td>
+                                            <td>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="profile-name">Glimmersteel blade</td>
+                                            <td>Melee</td><td>Melee</td><td>User</td><td>-1</td><td>1</td><td>-</td>
+                                            <td>
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </li>
+
+            </ul>
+
+
+
+            <div class="summary">
+                <h2>Force Rules</h2>
+                <p>
+                    <span class="bold">Connoisseurs of Pain (The Prophets of Flesh):</span>
+                     Models in your kill team with the Insensible to 
+Pain ability have an invulnerable save of 4+ (instead of 5+).
+                     (Elites)
+                </p>
+            </div>
+            <div class="summary">
+                <h2>Selection Rules</h2>
+                <p>
+                    <span class="bold">Blades for Hire:</span>
+                     DRUKHARI models which do not have the KABAL, WYCH 
+CULT or HAEMONCULUS COVEN keywords cannot be drawn from a Kabal, Wych 
+Cult or Haemonculus Coven, but can be included in a Drukhari kill team 
+without preventing other models in that kill team gaining a Drukhari 
+Obsession. Note, however, that these models cannot themselves benefit 
+from a Drukhari Obsession.
+                     ()
+                </p>
+                <p>
+                    <span class="bold">Power From Pain:</span>
+                     Models with this ability gain a bonus depending on 
+which battle round it is, as shown in the table below. Note that all 
+bonuses are cumulative; for example, in the second battle round, the 
+model ignores wounds on a roll of 6, and you can re-roll the dice when 
+determining how far the model Advances or charges.<br>
+                    1 - Inured to Suffering:Roll a D6 each time this model loses a wound; on a 6 that wound is not lost.<br>
+                    2 - Eager to Flay: You can re-roll the dice when 
+determining how far this model moves when it Advances or charges.<br>
+                    3 - Flensing Fury: Add 1 to hit rolls for this model in the Fight phase.<br>
+                    4 - Emboldened by Bloodshed: Re-roll failed Nerve tests for this model.<br>
+                    5+ - Mantle of Agony: Subtract 1 from the Leadership
+ characteristic of enemy models that are within 6" of any models from 
+your kill team with this bonus.
+                     ()
+                </p>
+            </div>
+            <br>
+            <p>Created with <a href="https://www.battlescribe.net/">BattleScribe</a></p>
+        </div>
+    
+
+</body></html>
